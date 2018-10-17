@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JavaScript Flappy Bird</title>
+	<link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+
+	<div class="game-container">
+		<!-- Bird -->
+		<img class="bird" src="./images/bird.svg" draggable="false">
+		<!-- Ground -->
+		<img class="ground" src="./images/ground.svg" draggable="false">
+		<img class="ground" src="./images/ground.svg" draggable="false">
+		<img class="ground" src="./images/ground.svg" draggable="false">
+		<img class="ground" src="./images/ground.svg" draggable="false">
+		<img class="ground" src="./images/ground.svg" draggable="false">
+		<!-- Pipes -->
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-top" src="./images/pipe.svg" draggable="false">
+		<img class="pipe-bot" src="./images/pipe.svg" draggable="false">
+		<!-- Clouds -->
+		<img class="cloud" src="./images/cloud.svg" draggable="false">
+		<img class="cloud" src="./images/cloud.svg" draggable="false">
+		<img class="cloud" src="./images/cloud.svg" draggable="false">
+		<img class="cloud" src="./images/cloud.svg" draggable="false">
+		<!-- Night -->
+		<div class="night-front"></div>
+		<div class="night-back"></div>
+		<img class="star" src="./images/stars.svg" draggable="false">
+		<img class="star" src="./images/stars.svg" draggable="false">
+		<img class="star" src="./images/stars.svg" draggable="false">
+		<img class="star" src="./images/stars.svg" draggable="false">
+		<!-- Settings button -->
+		<img class="settings-button" src="./images/settings.svg" draggable="false">
+		<!-- Game over -->
+		<div class="game-over">
+			<img class="game-over-text" src="./images/game-over.svg" draggable="false">
+			<img class="play-button" src="./images/play-button.svg" draggable="false">
+		</div>
+		<!-- Score -->
+		<div class="score">
+			<p><span id="current-score"></span>Current</p>
+			<p><span id="high-score"></span>High</p>
+		</div>
+		<!-- Instructions -->
+		<div class="inst">
+			<p class="inst-d">Spacebar<br>to flap</p>
+			<p class="inst-m">Tap to<br>flap</p>
+		</div>
+		<!-- Settings -->
+		<div class="settings">
+			<div style="margin-bottom: 25px; margin-top: -5px;">
+				<img class="bird-select-l" src="./images/settings.svg" draggable="false">
+				<img class="bird-select" src="./images/bird.svg" draggable="false">
+				<img class="bird-select-r" src="./images/settings.svg" draggable="false">
+			</div>
+			<div style="margin-bottom: 5px;">
+					<input class="time-checkbox checkbox" type="checkbox">
+					<p>Night</p>
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input class="speed-checkbox checkbox" type="checkbox">
+				<p>Hyper</p>
+			</div>
+			<div style="margin-bottom: 5px;">
+					<input class="trippy-checkbox checkbox" type="checkbox">
+					<p>Trippy</p>
+			</div>
+		</div>
+		<div class="game-background"></div>
+	</div>
+
+	<script src="./scripts/globals.js"></script>
+	<script src="./scripts/bird.js"></script>
+	<script src="./scripts/pipe.js"></script>
+	<script src="./scripts/ground.js"></script>
+	<script src="./scripts/cloud.js"></script>
+	<script src="./scripts/collisions.js"></script>
+	<script src="./scripts/controls.js"></script>
+	<script src="./scripts/settings.js"></script>
+	<script src="./scripts/main.js"></script>
+</body>
+</html>
